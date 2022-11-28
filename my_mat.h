@@ -1,10 +1,10 @@
 // Functions:
+int min(int, int);
 void Floyd_Warshall();
 void A();
-int B(int, int);
-int min(int, int);
+void B(int, int);
+void C(int, int);
 
 // Global Variables:
-extern int matrix[4][4];
+extern int matrix[10][10];
 extern int to_input;
-#define INFINITY  1000000;
