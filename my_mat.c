@@ -36,26 +36,26 @@ void A(){
 }
 
 void B(int first_index, int second_index){
-    int item_to_check = matrix[first_index][second_index];
-    int bigger_than_zero = item_to_check > 0;
-    int smaller_than_infinity = item_to_check < max;
-
-    int to_return = ((bigger_than_zero) && (smaller_than_infinity)) ? 1 : 0;
-    if (to_return == 0){
+    if (matrix[first_index][second_index] == 0 || matrix[first_index][second_index] == max)
+    {
         printf("\nFalse");
     }
-    else{
-        printf("\nTrue");
-    }
+    else
+    {
+        printf ("\nTrue");
+    }    
+    
 }
 
 void C(int first_index, int second_index){
-    int item_to_check = matrix[first_index][second_index];
-    int bigger_than_zero = item_to_check > 0;
-    int smaller_than_infinity = item_to_check < max;
-
-    int to_return = ((bigger_than_zero) && (smaller_than_infinity)) ? item_to_check : -1;
-    printf("\n%d",&to_return);
+   if (matrix[first_index][second_index] == 0 || matrix[first_index][second_index] == max)
+    {
+        printf("\n-1");
+    }
+    else
+    {
+        printf ("\n%d", matrix[first_index][second_index]);
+    } 
 }
 
 void D(){
