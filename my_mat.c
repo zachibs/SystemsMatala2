@@ -17,35 +17,15 @@ void Floyd_Warshall(){
             }
         }
     }
-
-    printf("\nFinished Algorithm!!! \n");
-
-    for (int i = 0; i < 10; i++){
-        for (int j = 0; j < 10; j++){
-            printf("%d ", matrix[i][j]);
-        }
-        printf("\n");
-    }
 }
 
 void A(){
     for (int i = 0; i < 10; i++){
         for (int j = 0; j < 10; j++){
-            printf("Enter value for row %d, column %d: ", i, j);
             scanf("%d", &to_input);
             matrix[i][j] = to_input;
         }
     }
-
-    printf("\nFinished Reading!!! \n");
-
-    for (int i = 0; i < 10; i++){
-        for (int j = 0; j < 10; j++){
-            printf("%d ", matrix[i][j]);
-        }
-        printf("\n");
-    }
-
     Floyd_Warshall();
 }
 
