@@ -35,7 +35,12 @@ void B(int first_index, int second_index){
     int smaller_than_infinity = item_to_check < 1000000;
 
     int to_return = ((bigger_than_zero) && (smaller_than_infinity)) ? 1 : 0;
-    printf("\n%d",to_return);
+    if (to_return == 0){
+        printf("\nFalse");
+    }
+    else{
+        printf("\nTrue");
+    }
 }
 
 void C(int first_index, int second_index){
