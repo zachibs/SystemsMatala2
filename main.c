@@ -19,15 +19,15 @@ int main()
 
     if (choose == 'B')
     {
-        scanf("%d", a);
-        scanf("%d", b);
+        scanf("%d", &a);
+        scanf("%d", &b);
         B(a,b);
     }
 
     if (choose == 'C')
     {
-        scanf("%d", a);
-        scanf("%d", b);
+        scanf("%d", &a);
+        scanf("%d", &b);
         C(a,b);
     }
 

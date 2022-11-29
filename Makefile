@@ -8,4 +8,7 @@ my_mat.o: my_mat.c
 connections: main.o my_mat.o
 	gcc -o connections main.o my_mat.o
 
+clean:
+	rm -f *.o *.gch connections
+
 all: connections
