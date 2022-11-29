@@ -6,8 +6,6 @@ int main()
     char choose;
     int a,b;
 
-
-
     while (1)
     {
     scanf("%c", &choose);    
@@ -37,8 +35,6 @@ int main()
     }
     
     }
-    
-
     return 1;
 }
 
