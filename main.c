@@ -3,13 +3,41 @@
 
 int main()
 {
-    A();
+    char choose;
+    int a,b;
 
-    B(3, 2);
+
+
+    while (1)
+    {
+    scanf("%c", &choose);    
     
-    C(2,1);
+    if (choose == 'A')
+    {
+        A();
+    }
 
-    D();
+    if (choose == 'B')
+    {
+        scanf("%d", a);
+        scanf("%d", b);
+        B(a,b);
+    }
+
+    if (choose == 'C')
+    {
+        scanf("%d", a);
+        scanf("%d", b);
+        C(a,b);
+    }
+
+    if (choose == 'D')
+    {
+        D();
+    }
+    
+    }
+    
 
     return 1;
 }
