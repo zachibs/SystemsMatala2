@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int matrix[10][10];
 int to_input;
@@ -64,4 +65,8 @@ void C(int first_index, int second_index){
 
     int to_return = ((bigger_than_zero) && (smaller_than_infinity)) ? item_to_check : -1;
     printf("\n%d\n",to_return);
+}
+
+void D(){
+    exit(0);
 }
